@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.1] - 2026-11-10
+
+### Hinzugefügt
+
+- Skalierbares Paket-Icon als `logo.svg` mit anthrazitfarbener Grundform,
+  orangefarbener Ecke und weißem Newsletter-Export-Symbol.
+- Icon-Vorschau in der README und Hinweise zur Registrierung im Contao Manager.
+
+### Geändert
+
+- Installationsanleitung für die Veröffentlichung auf Packagist aktualisiert.
+
 ## [1.0.0] - 2026-11-10
 
 ### Hinzugefügt
@@ -14,4 +26,5 @@
 - Automatisierte Export- und Berechtigungstests sowie Installationsdokumentation.
 - Veröffentlichung unter LGPL-3.0-or-later.
 
+[1.0.1]: https://github.com/hschottm/contao-newsletter-export/releases/tag/1.0.1
 [1.0.0]: https://github.com/hschottm/contao-newsletter-export/releases/tag/1.0.0
