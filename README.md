@@ -1,5 +1,7 @@
 # Contao Newsletter Export
 
+![Contao Newsletter Export](logo.svg)
+
 `hschottm/contao-newsletter-export` ergänzt die Newsletter-Empfängerverwaltung
 von Contao um einen **BCC-Export** direkt nach **CSV-Import**.
 
@@ -33,10 +35,10 @@ Voraussetzungen: **Contao 5.3 oder neuer innerhalb von Contao 5**, das offiziell
 Newsletter-Bundle und PHP 8.1 oder neuer (zusätzlich gelten die PHP-Anforderungen
 der eingesetzten Contao-Version).
 
-Das öffentliche GitHub-Repository kann direkt als Composer-Quelle verwendet werden:
+Das Paket ist auf Packagist veröffentlicht und kann über den Contao Manager
+oder Composer installiert werden:
 
 ```bash
-composer config repositories.newsletter-export vcs https://github.com/hschottm/contao-newsletter-export
 composer require hschottm/contao-newsletter-export:^1.0
 ```
 
@@ -58,10 +60,23 @@ offiziellen, lokal geprüften Contao-5.3-Bundles enthalten sind:
 `cs`, `de`, `en`, `es`, `fa`, `fr`, `it`, `ja`, `ko`, `lv`, `nl`, `pl`, `pt`,
 `ru`, `sk`, `sl`, `sq`, `sr`, `sv`, `tr`. Englisch dient als Fallback.
 
+## Paket-Icon
+
+[logo.svg](logo.svg) enthält das skalierbare Paket-Icon: eine anthrazitfarbene
+Grundform mit orangefarbener Ecke sowie einem weißen Briefumschlag mit Export-Pfeil.
+Die Grundform und der Farbakzent bilden die gemeinsame Gestaltung der
+Erweiterungsfamilie. Das SVG enthält keine eingebetteten Rasterbilder oder externen Ressourcen.
+
+Für die Anzeige im Contao Manager muss das Icon zusätzlich im zentralen Repository
+[contao/package-metadata](https://github.com/contao/package-metadata) unter
+`meta/hschottm/contao-newsletter-export/logo.svg` eingereicht werden.
+Die Datei im Composer-Paket allein registriert noch kein Manager-Logo.
+Siehe die [Metadata-Dokumentation](https://contao.github.io/package-metadata/docs/en/).
+
 ## Entwicklung
 
-`main` und der zusätzliche Kompatibilitätsbranch `contao53` enthalten zum Release
-1.0.0 denselben Stand. Der Release-Tag heißt `1.0.0`.
+Der Hauptbranch ist `main`, der zusätzliche Kompatibilitätsbranch heißt `contao53`.
+Beide enthalten zum Release `1.0.1` denselben Stand.
 
 ```bash
 composer install
