@@ -1,0 +1,47 @@
+{
+    "name": "hschottm/contao-newsletter-export",
+    "type": "contao-bundle",
+    "description": "Export active Contao newsletter subscribers as a plain-text BCC address list.",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Helmut Schottmüller",
+            "homepage": "https://github.com/hschottm"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3",
+        "contao/newsletter-bundle": "^5.3",
+        "doctrine/dbal": "^3.8 || ^4.0",
+        "symfony/config": "^6.4 || ^7.0",
+        "symfony/http-foundation": "^6.4 || ^7.0",
+        "symfony/http-kernel": "^6.4 || ^7.0",
+        "symfony/security-core": "^6.4 || ^7.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hschottm\\ContaoNewsletterExport\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Hschottm\\ContaoNewsletterExport\\ContaoManager\\Plugin"
+    },
+    "support": {
+        "issues": "https://github.com/hschottm/contao-newsletter-export/issues",
+        "source": "https://github.com/hschottm/contao-newsletter-export"
+    },
+    "scripts": {
+        "test": "@php tests/run.php"
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "php-http/discovery": false
+        }
+    }
+}

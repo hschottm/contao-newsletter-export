@@ -1,0 +1,7 @@
+services:
+    Hschottm\ContaoNewsletterExport\Backend\BccExport:
+        public: true
+        arguments:
+            - '@database_connection'
+            - '@security.authorization_checker'
+            - '@request_stack'
